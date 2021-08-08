@@ -12,7 +12,10 @@ class GameScene: SKScene {
     
     
     override func didMove(to view: SKView) {
-        
+        let background = SKSpriteNode(imageNamed: "background-pattern")
+        background.name = "background"
+        background.zPosition = -1
+        addChild(background)
 
     }
     
