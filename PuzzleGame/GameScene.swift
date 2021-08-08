@@ -16,6 +16,8 @@ class GameScene: SKScene {
         background.name = "background"
         background.zPosition = -1
         addChild(background)
+        
+        createGrid()
 
     }
     
@@ -43,4 +45,5 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
+    
 }

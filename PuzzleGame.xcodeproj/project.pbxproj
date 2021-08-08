@@ -14,6 +14,7 @@
 		414EA89626C01E1400602F0D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EA89526C01E1400602F0D /* GameViewController.swift */; };
 		414EA89926C01E1400602F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414EA89726C01E1400602F0D /* Main.storyboard */; };
 		414EA89B26C01E1600602F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414EA89A26C01E1600602F0D /* Assets.xcassets */; };
+		414EA8A326C0280A00602F0D /* GSECreateGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EA8A226C0280A00602F0D /* GSECreateGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		414EA89826C01E1400602F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		414EA89A26C01E1600602F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		414EA89C26C01E1600602F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		414EA8A226C0280A00602F0D /* GSECreateGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSECreateGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				414EA88F26C01E1400602F0D /* GameScene.sks */,
 				414EA89126C01E1400602F0D /* Actions.sks */,
 				414EA89326C01E1400602F0D /* GameScene.swift */,
+				414EA8A226C0280A00602F0D /* GSECreateGrid.swift */,
 				414EA89526C01E1400602F0D /* GameViewController.swift */,
 				414EA89726C01E1400602F0D /* Main.storyboard */,
 				414EA89A26C01E1600602F0D /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 				414EA89426C01E1400602F0D /* GameScene.swift in Sources */,
 				414EA89626C01E1400602F0D /* GameViewController.swift in Sources */,
 				414EA88E26C01E1400602F0D /* AppDelegate.swift in Sources */,
+				414EA8A326C0280A00602F0D /* GSECreateGrid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
