@@ -10,6 +10,8 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    var level = 1
+    
     
     override func didMove(to view: SKView) {
         let background = SKSpriteNode(imageNamed: "background-pattern")
@@ -18,6 +20,7 @@ class GameScene: SKScene {
         addChild(background)
         
         createGrid()
+        createLevel()
 
     }
     

@@ -25,11 +25,23 @@ extension GameScene {
                 addChild(item)
             }
         }
-        
-        
-        
     }
     
-    
+    func createLevel() {
+        var itemsToShow = 4 + (level * 4)
+        
+        // find all nodes that belong to our scene that are not called "Background"
+        
+        let items = children.filter{$0.name != "background"}
+        
+        //Shuffle those nodes so they are in a random order
+        let shuffled = items.shuffled() as! [SKSpriteNode]
+        
+        //loop over them
+        for item in shuffled {
+            //and hide each one
+            item.alpha = 0
+        }
+    }
     
 }
