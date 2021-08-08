@@ -30,6 +30,18 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
 
+        guard let touch = touches.first else { return }
+        let location = touch.location(in: self)
+        let tappedNodes = nodes(at: location)
+        
+        guard let tapped = tappedNodes.first else { return }
+        
+        if tapped.name == "correct" {
+            print("Correct!")
+        } else if tapped.name == "wrong" {
+            print("Wrong!")
+        }
+        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
