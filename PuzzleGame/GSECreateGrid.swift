@@ -84,11 +84,23 @@ extension GameScene {
         }
         
         let scaleUP = SKAction.scale(to: 2, duration: 0.5)
-        let scaleDown = SKAction.scaleY(to: 1, duration: 0.5)
+        let scaleDown = SKAction.scale(to: 1, duration: 0.5)
         let sequence = SKAction.sequence([scaleUP, scaleDown])
         node.run(sequence)
         
     }
     
-    
+    func wrongAnswer(node: SKNode) {
+        let wrong = SKSpriteNode(imageNamed: "wrong")
+        wrong.position = node.position
+        wrong.zPosition = 5
+        addChild(wrong)
+        
+        //each node can also run actions via the .run command
+        let wait = SKAction.wait(forDuration: 0.5)
+        let remove = SKAction.removeFromParent()
+        let sequence = SKAction.sequence([wait, remove])
+        wrong.run(sequence)
+        
+    }
 }

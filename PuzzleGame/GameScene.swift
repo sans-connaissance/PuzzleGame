@@ -41,7 +41,7 @@ class GameScene: SKScene {
         if tapped.name == "correct" {
             correctAnswer(node: tapped)
         } else if tapped.name == "wrong" {
-            print("Wrong!")
+            wrongAnswer(node: tapped)
         }
         
         
