@@ -34,6 +34,8 @@ class GameScene: SKScene {
         createLevel()
         
         score = 0
+        let music = SKAudioNode(fileNamed: "truth-in-the-stones")
+        background.addChild(music)
 
     }
     

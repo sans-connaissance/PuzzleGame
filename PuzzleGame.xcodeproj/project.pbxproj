@@ -15,6 +15,9 @@
 		414EA89926C01E1400602F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 414EA89726C01E1400602F0D /* Main.storyboard */; };
 		414EA89B26C01E1600602F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414EA89A26C01E1600602F0D /* Assets.xcassets */; };
 		414EA8A326C0280A00602F0D /* GSECreateGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414EA8A226C0280A00602F0D /* GSECreateGrid.swift */; };
+		414EA8A526C1EC5700602F0D /* truth-in-the-stones.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 414EA8A426C1EC5700602F0D /* truth-in-the-stones.mp3 */; };
+		414EA8A726C1ECC700602F0D /* wrong-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 414EA8A626C1ECC700602F0D /* wrong-1.wav */; };
+		414EA8A926C1ECCF00602F0D /* correct-1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 414EA8A826C1ECCF00602F0D /* correct-1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		414EA89A26C01E1600602F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		414EA89C26C01E1600602F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		414EA8A226C0280A00602F0D /* GSECreateGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSECreateGrid.swift; sourceTree = "<group>"; };
+		414EA8A426C1EC5700602F0D /* truth-in-the-stones.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "truth-in-the-stones.mp3"; sourceTree = "<group>"; };
+		414EA8A626C1ECC700602F0D /* wrong-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "wrong-1.wav"; sourceTree = "<group>"; };
+		414EA8A826C1ECCF00602F0D /* correct-1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "correct-1.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 		414EA88C26C01E1400602F0D /* PuzzleGame */ = {
 			isa = PBXGroup;
 			children = (
+				414EA8A426C1EC5700602F0D /* truth-in-the-stones.mp3 */,
+				414EA8A626C1ECC700602F0D /* wrong-1.wav */,
+				414EA8A826C1ECCF00602F0D /* correct-1.wav */,
 				414EA88D26C01E1400602F0D /* AppDelegate.swift */,
 				414EA88F26C01E1400602F0D /* GameScene.sks */,
 				414EA89126C01E1400602F0D /* Actions.sks */,
@@ -132,7 +141,10 @@
 			files = (
 				414EA89926C01E1400602F0D /* Main.storyboard in Resources */,
 				414EA89026C01E1400602F0D /* GameScene.sks in Resources */,
+				414EA8A526C1EC5700602F0D /* truth-in-the-stones.mp3 in Resources */,
+				414EA8A926C1ECCF00602F0D /* correct-1.wav in Resources */,
 				414EA89B26C01E1600602F0D /* Assets.xcassets in Resources */,
+				414EA8A726C1ECC700602F0D /* wrong-1.wav in Resources */,
 				414EA89226C01E1400602F0D /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
