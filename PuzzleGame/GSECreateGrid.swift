@@ -77,6 +77,18 @@ extension GameScene {
             guard child.name == "wrong" else { continue }
             child.run(fade)
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.level += 1
+            self.createLevel()
+        }
+        
+        let scaleUP = SKAction.scale(to: 2, duration: 0.5)
+        let scaleDown = SKAction.scaleY(to: 1, duration: 0.5)
+        let sequence = SKAction.sequence([scaleUP, scaleDown])
+        node.run(sequence)
+        
     }
+    
     
 }
