@@ -70,4 +70,13 @@ extension GameScene {
         
     }
     
+    func correctAnswer(node: SKNode) {
+        let fade = SKAction.fadeOut(withDuration: 0.5)
+        
+        for child in children {
+            guard child.name == "wrong" else { continue }
+            child.run(fade)
+        }
+    }
+    
 }

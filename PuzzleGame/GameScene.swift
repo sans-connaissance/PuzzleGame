@@ -36,11 +36,15 @@ class GameScene: SKScene {
         
         guard let tapped = tappedNodes.first else { return }
         
+        
+        //Pretty cool how you are using the assigned names to drive logic and behavior.
         if tapped.name == "correct" {
-            print("Correct!")
+            correctAnswer(node: tapped)
         } else if tapped.name == "wrong" {
             print("Wrong!")
         }
+        
+        
         
     }
     
