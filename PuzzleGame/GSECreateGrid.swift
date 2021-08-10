@@ -71,6 +71,11 @@ extension GameScene {
     }
     
     func correctAnswer(node: SKNode) {
+        
+        startTime = 0
+        
+        run(SKAction.playSoundFileNamed("correct-1", waitForCompletion: false))
+        
         let fade = SKAction.fadeOut(withDuration: 0.5)
         
         for child in children {
@@ -91,6 +96,9 @@ extension GameScene {
     }
     
     func wrongAnswer(node: SKNode) {
+        
+        run(SKAction.playSoundFileNamed("wrong-1", waitForCompletion: false))
+        
         let wrong = SKSpriteNode(imageNamed: "wrong")
         wrong.position = node.position
         wrong.zPosition = 5
