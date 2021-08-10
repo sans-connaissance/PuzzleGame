@@ -23,7 +23,7 @@ class GameScene: SKScene {
     var isGameRunning = true
     
     override func didMove(to view: SKView) {
-       
+        
         //added music here because it exists throughout.. not a one off use like the SKAction calls in correct and wrong answer functions
         let background = SKSpriteNode(imageNamed: "background-pattern")
         background.name = "background"
@@ -46,17 +46,17 @@ class GameScene: SKScene {
         score = 0
         let music = SKAudioNode(fileNamed: "truth-in-the-stones")
         background.addChild(music)
-
+        
     }
     
     
-
-
+    
+    
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard isGameRunning else { return }
-
+        
         guard let touch = touches.first else { return }
         let location = touch.location(in: self)
         let tappedNodes = nodes(at: location)
@@ -78,15 +78,15 @@ class GameScene: SKScene {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-    
+        
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-  
+        
     }
     
     override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-     
+        
     }
     
     
@@ -111,6 +111,18 @@ class GameScene: SKScene {
             
         } else {
             timeLabel.alpha = 0
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            //create a new scene from GameScene.sks
+            
+            if let scene = GameScene(fileNamed: "GameScene") {
+                // make it stretch to fill all available space
+                scene.scaleMode = .aspectFill
+                
+                // present it immediately
+                self.view?.presentScene(scene)
+            }
         }
         
     }

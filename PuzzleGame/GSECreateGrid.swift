@@ -26,8 +26,11 @@ extension GameScene {
     }
     
     func createLevel() {
-        var itemsToShow = 4 + (level * 4)
         
+        isUserInteractionEnabled = true
+        
+        var itemsToShow = 4 + (level * 4)
+        itemsToShow = min(itemsToShow, 96)
         // find all nodes that belong to our scene that are not called "Background"
         //This is the trick!!
         let items = children.filter{$0.name != "background"}
@@ -92,6 +95,8 @@ extension GameScene {
         let scaleDown = SKAction.scale(to: 1, duration: 0.5)
         let sequence = SKAction.sequence([scaleUP, scaleDown])
         node.run(sequence)
+        
+        isUserInteractionEnabled = false
         
     }
     
